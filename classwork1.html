@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1 id="heading" class="head">Hello,Captain </h1>
+    <!-- <ul id="list"></ul> -->
+    <script>
+        let myheading = document.getElementById("heading");
+        console.log(myheading.textContent);
+     //  myheading.style.color = "red";
+       // myheading.style.backgroundColor = "skyblue";
+      myheading.style.cssText = "color :red ; background-color : blue";
+      //  let list = document.getElementById("list");
+      let body=document.getElementsByTagName("body");
+      let OrderedList = document.createElement("ol");
+        let listItem = document.createElement("li");
+        let listItemContent = document.createTextNode("Paris");
+        listItem.append(listItemContent);
+        list.append(listItem);
+        OrderedList.append(listItem);
+        body[0].append(OrderedList);
+
+    </script>
+</body>
+</html>

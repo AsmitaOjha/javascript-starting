@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello, I am heading</h1>
+    <h2 id="hello"> I am heading two.</h2>
+    <h3 class="hii">Good Evening</h3>
+    <div class="my-div"></div>
+    <script>
+        let div=document.getElementById("my-div");
+        let headingElement = document.getElementById("heading");
+        console.log(headingElement.textContent);
+     //   headingElement.remove();
+        let hello = document.getElementById("hello");
+        console.log(hello.textContent);
+      //  hello.remove();
+        let headd = document.getElementsByClassName("hii");
+        console.log(headd[0].textContent);
+     //   headd[0].remove;
+     let h4 = document.createElement("h4");
+     let content = document.createTextNode("Hello, World");
+     h4.append(content);
+//this div.append is not displaying the h2 content in the html
+    div.append(h4);
+       
+     console.log(h4.textContent);
+     
+
+    </script>
+</body>
+</html>
